@@ -34,7 +34,7 @@ namespace PokemonWPF
             if(this.PVida.Value >= 100)
             {
                 dtReloj.Stop();
-                img1.Opacity = 1;
+                imgPocion.Opacity = 1;
             }
         }
 
@@ -44,7 +44,7 @@ namespace PokemonWPF
             dtReloj.Interval = TimeSpan.FromMilliseconds(100);
             dtReloj.Tick += usePotionRed;
             dtReloj.Start();
-            img1.Opacity = 0.1;
+            imgPocion.Opacity = 0.1;
         }
     }
 }
