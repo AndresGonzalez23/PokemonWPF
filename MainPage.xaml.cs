@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -24,15 +25,21 @@ namespace PokemonWPF
     public sealed partial class MainPage : Page
     {
         DispatcherTimer dtReloj;
+        private System.Timers.Timer aTimer;
+
         public MainPage()
         {
             this.InitializeComponent();
             dtReloj = new DispatcherTimer();
 
             Storyboard sb = (Storyboard)this.Resources["Correr"];
+            Storyboard sb2 = (Storyboard)this.Resources["MoverOrejas"];
             sb.AutoReverse= true;
+            sb2.AutoReverse= true;
             sb.RepeatBehavior = RepeatBehavior.Forever;
+            sb2.RepeatBehavior = RepeatBehavior.Forever;
             sb.Begin();
+            sb2.Begin();
         }
         
         private void usePotionRed(object sender, object e)
@@ -52,6 +59,11 @@ namespace PokemonWPF
             dtReloj.Tick += usePotionRed;
             dtReloj.Start();
             imgPocion.Opacity = 0.1;
+        }
+
+        private void increaseEnergy(object sender, PointerRoutedEventArgs e)
+        {
+            PEnergia.Value = PEnergia.Value + 10;
         }
 
         private void cambioColor(object sender, PointerRoutedEventArgs e)
@@ -76,5 +88,7 @@ namespace PokemonWPF
             sb.RepeatBehavior = new RepeatBehavior(3);
             sb.Begin();
         }
+
+        
     }
 }
