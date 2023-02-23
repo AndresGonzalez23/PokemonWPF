@@ -193,7 +193,7 @@
                 <Canvas.RenderTransform>
                     <CompositeTransform/>
                 </Canvas.RenderTransform>
-                <Ellipse x:Name="elipseBrazoDerecho" Height="24" Stroke="Black" Width="49" Canvas.Left="-8.492" Canvas.Top="10.08" RenderTransformOrigin="0.916,0.481" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="#FFE0915A" PointerReleased="cambioColor">
+                <Ellipse x:Name="elipseBrazoDerecho" Height="24" Stroke="Black" Width="49" Canvas.Left="-8.492" Canvas.Top="10.08" RenderTransformOrigin="0.916,0.481" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="#FFE0915A">
 
                     <Ellipse.Resources>
                         <Storyboard x:Name="sbBrazoDerechoP" x:Key="sbBrazoDerechoKey">

@@ -25,7 +25,6 @@ namespace PokemonWPF
     public sealed partial class MainPage : Page
     {
         DispatcherTimer dtReloj;
-        private System.Timers.Timer aTimer;
 
         public MainPage()
         {
@@ -64,12 +63,6 @@ namespace PokemonWPF
         private void increaseEnergy(object sender, PointerRoutedEventArgs e)
         {
             PEnergia.Value = PEnergia.Value + 10;
-        }
-
-        private void cambioColor(object sender, PointerRoutedEventArgs e)
-        {
-            Storyboard sb = (Storyboard)this.elipseBrazoDerecho.Resources["sbBrazoDerechoKey"];
-            sb.Begin();
         }
 
         private void morder(object sender, PointerRoutedEventArgs e)
