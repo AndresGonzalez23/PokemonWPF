@@ -25,11 +25,15 @@ namespace PokemonWPF
     public sealed partial class MainPage : Page
     {
         DispatcherTimer dtReloj;
+        DispatcherTimer controlTiempos;
 
         public MainPage()
         {
             this.InitializeComponent();
             dtReloj = new DispatcherTimer();
+            controlTiempos = new DispatcherTimer();
+            controlTiempos.Interval = TimeSpan.FromMilliseconds(2000);
+            controlTiempos.Tick += useEnergyPotion;
 
             Storyboard sb = (Storyboard)this.Resources["Correr"];
             Storyboard sb2 = (Storyboard)this.Resources["MoverOrejas"];
@@ -63,6 +67,16 @@ namespace PokemonWPF
         private void increaseEnergy(object sender, PointerRoutedEventArgs e)
         {
             PEnergia.Value = PEnergia.Value + 10;
+            controlTiempos.Start();
+            imgElixir.Visibility = Visibility.Collapsed;
+        }
+
+        private void useEnergyPotion(object sender, object e)
+        {
+
+            imgElixir.Visibility = Visibility.Visible;
+            controlTiempos.Stop();
+
         }
 
         private void morder(object sender, PointerRoutedEventArgs e)
