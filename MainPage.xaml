@@ -66,7 +66,7 @@
         <Image x:Name="imgPocion" Grid.Column="2" Grid.Row="0" Margin="10,10,10,10" Source="/Assets/pocion.png" PointerReleased="increaseHealth"/>
         <Image x:Name="imgElixir" Grid.Column="2" Grid.Row="1" Margin="10,10,10,10" Source="Assets/elixir.png" PointerReleased="increaseEnergy"/>
         <TextBlock x:Name="txtNombre" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Teddiursa" TextWrapping="Wrap" FontSize="40" Foreground="Black" />
-        <Canvas x:Name="cvTeddiursa" Grid.Column="1" HorizontalAlignment="Center" Height="279" Grid.Row="2" VerticalAlignment="Top" Width="286" Margin="0,138,0,0">
+        <Canvas x:Name="cvTeddiursa" Grid.Column="1" HorizontalAlignment="Center" Height="279" Grid.Row="2" VerticalAlignment="Bottom" Width="286">
 
             <Canvas x:Name="cvPieIzquierdo" Grid.Column="1" Grid.Row="2" Height="35" Canvas.Left="80" Canvas.Top="222" Width="47">
                 <Ellipse x:Name="elipsePieIzquierdo" Height="22" Canvas.Left="4.852" Stroke="Black" Canvas.Top="3.903" Width="37" Fill="#FFE0915A" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
