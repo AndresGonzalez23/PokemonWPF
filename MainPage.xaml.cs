@@ -32,6 +32,8 @@ namespace PokemonWPF
             this.InitializeComponent();
             dtReloj = new DispatcherTimer();
             controlTiempos = new DispatcherTimer();
+            dtReloj.Interval = TimeSpan.FromMilliseconds(2000);
+            dtReloj.Tick += usePotionRed;
             controlTiempos.Interval = TimeSpan.FromMilliseconds(2000);
             controlTiempos.Tick += useEnergyPotion;
 
@@ -47,21 +49,17 @@ namespace PokemonWPF
         
         private void usePotionRed(object sender, object e)
         {
-            PVida.Value += 0.2;
-            if(this.PVida.Value >= 100)
-            {
-                dtReloj.Stop();
-                imgPocion.Opacity = 1;
-            }
+            imgPocionUsada.Visibility=Visibility.Collapsed;
+            imgPocion.Visibility = Visibility.Visible;
+            dtReloj.Stop();
         }
 
         private void increaseHealth(object sender, PointerRoutedEventArgs e)
         {
-            dtReloj = new DispatcherTimer();
-            dtReloj.Interval = TimeSpan.FromMilliseconds(100);
-            dtReloj.Tick += usePotionRed;
+            PVida.Value = PVida.Value + 20;
             dtReloj.Start();
-            imgPocion.Opacity = 0.1;
+            imgPocion.Visibility = Visibility.Collapsed;
+            imgPocionUsada.Visibility = Visibility.Visible;
         }
 
         private void increaseEnergy(object sender, PointerRoutedEventArgs e)
@@ -69,11 +67,12 @@ namespace PokemonWPF
             PEnergia.Value = PEnergia.Value + 10;
             controlTiempos.Start();
             imgElixir.Visibility = Visibility.Collapsed;
+            imgElixirUsada.Visibility = Visibility.Visible;
         }
 
         private void useEnergyPotion(object sender, object e)
         {
-
+            imgElixirUsada.Visibility = Visibility.Collapsed;
             imgElixir.Visibility = Visibility.Visible;
             controlTiempos.Stop();
 
