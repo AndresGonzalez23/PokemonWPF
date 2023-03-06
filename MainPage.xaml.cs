@@ -95,6 +95,13 @@ namespace PokemonWPF
             sb.Begin();
         }
 
-        
+        private void correr(object sender, PointerRoutedEventArgs e)
+        {
+            Storyboard sb = (Storyboard)this.Resources["Moverse"];
+            sb.AutoReverse=true;
+            sb.Begin();
+
+
+        }
     }
 }
