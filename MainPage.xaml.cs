@@ -37,7 +37,7 @@ namespace PokemonWPF
             controlTiempos.Interval = TimeSpan.FromMilliseconds(2000);
             controlTiempos.Tick += useEnergyPotion;
 
-            Storyboard sb = (Storyboard)this.Resources["Correr"];
+            Storyboard sb = (Storyboard)this.Resources["MoverBrazos"];
             Storyboard sb2 = (Storyboard)this.Resources["MoverOrejas"];
             sb.AutoReverse= true;
             sb2.AutoReverse= true;
@@ -97,7 +97,7 @@ namespace PokemonWPF
 
         private void correr(object sender, PointerRoutedEventArgs e)
         {
-            Storyboard sb = (Storyboard)this.Resources["Moverse"];
+            Storyboard sb = (Storyboard)this.Resources["Cosquillas"];
             sb.AutoReverse=true;
             sb.Begin();
 
@@ -105,8 +105,13 @@ namespace PokemonWPF
 
         private void usarVenganza(object sender, RoutedEventArgs e)
         {
-
             Storyboard sb = (Storyboard)this.Resources["Venganza"];
+            sb.Begin();   
+        }
+
+        private void usarProteccion(object sender, RoutedEventArgs e)
+        {
+            Storyboard sb = (Storyboard)this.Resources["Protección"];
             sb.Begin();
         }
     }

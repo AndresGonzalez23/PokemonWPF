@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Foreground="White" Background="White">
     <Page.Resources>
-        <Storyboard x:Name="Correr">
+        <Storyboard x:Name="MoverBrazos">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvBrazoIzquierdo" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="48.909">
                     <EasingDoubleKeyFrame.EasingFunction>
@@ -43,7 +43,7 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.953"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Name="Moverse">
+        <Storyboard x:Name="Cosquillas">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvTeddiursa" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
                 <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="266.4"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-265.2"/>
@@ -117,6 +117,47 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="14.424"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1.566"/>
             </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="Protección">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvBrazoDerecho" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="131.866"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="136.508"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.8000000" Value="16.92"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvBrazoIzquierdo" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-129.947"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="-136.17"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.8000000" Value="-8.965"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="cvEscudo" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgEscudo" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
     </Page.Resources>
 
@@ -310,9 +351,15 @@
                     </Path.RenderTransform>
                 </Path>
             </Canvas>
+            <Canvas x:Name="cvEscudo" Grid.Column="1" Grid.Row="2" Height="105" Width="112" Canvas.Left="87" Canvas.Top="140" RenderTransformOrigin="0.557,0.545" Visibility="Collapsed">
+                <Image x:Name="imgEscudo" Source="/Assets/escudo.png" Height="107" Width="106" HorizontalAlignment="Left" Canvas.Left="3" Canvas.Top="-1" VerticalAlignment="Top" Visibility="Collapsed"/>
+            </Canvas>
         </Canvas>
-        <StackPanel x:Name="spAcciones" Grid.Column="2" Grid.Row="2">
-            <Button x:Name="btnAtaque" Content="Venganza" Foreground="White" Height="60" FontSize="17" Background="#FF655456" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,50,5,0" Click="usarVenganza"/>
+        <StackPanel x:Name="spAcciones" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button x:Name="btnAtaque" Content="Venganza" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0" Click="usarVenganza"/>
+            <Button x:Name="btnProteccion" Content="Protección" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" Click="usarProteccion" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0"/>
+            <Button x:Name="btnDescanso" Content="Descanso" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" Click="usarVenganza" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0"/>
         </StackPanel>
+
     </Grid>
 </Page>
