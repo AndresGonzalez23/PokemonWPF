@@ -89,7 +89,7 @@ namespace PokemonWPF
             Storyboard.SetTarget(da, ptBoca.RenderTransform);
             Storyboard.SetTargetProperty(da, "ScaleY");
             da.From = 1;
-            da.To = 1.1;
+            da.To = 1.5;
             sb.AutoReverse = true;
             sb.RepeatBehavior = new RepeatBehavior(3);
             sb.Begin();
@@ -101,7 +101,13 @@ namespace PokemonWPF
             sb.AutoReverse=true;
             sb.Begin();
 
+        }
 
+        private void usarVenganza(object sender, RoutedEventArgs e)
+        {
+
+            Storyboard sb = (Storyboard)this.Resources["Venganza"];
+            sb.Begin();
         }
     }
 }
