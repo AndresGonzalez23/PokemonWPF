@@ -70,6 +70,42 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="29.548"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="6.135"/>
             </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnAtaque" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnProteccion" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnDescanso" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Name="Venganza">
             <ColorAnimationUsingKeyFrames Storyboard.TargetName="ptLuna" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
@@ -117,6 +153,42 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="14.424"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1.566"/>
             </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnAtaque" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.3000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnProteccion" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.3000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnDescanso" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.3000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Name="Protección">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvBrazoDerecho" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
@@ -155,6 +227,42 @@
                 <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
                     <DiscreteObjectKeyFrame.Value>
                         <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnAtaque" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnProteccion" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnDescanso" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
                     </DiscreteObjectKeyFrame.Value>
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
