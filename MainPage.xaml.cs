@@ -32,9 +32,9 @@ namespace PokemonWPF
             this.InitializeComponent();
             dtReloj = new DispatcherTimer();
             controlTiempos = new DispatcherTimer();
-            dtReloj.Interval = TimeSpan.FromMilliseconds(2000);
+            dtReloj.Interval = TimeSpan.FromMilliseconds(4000);
             dtReloj.Tick += usePotionRed;
-            controlTiempos.Interval = TimeSpan.FromMilliseconds(2000);
+            controlTiempos.Interval = TimeSpan.FromMilliseconds(4000);
             controlTiempos.Tick += useEnergyPotion;
 
             Storyboard sb = (Storyboard)this.Resources["MoverBrazos"];
@@ -45,6 +45,8 @@ namespace PokemonWPF
             sb2.RepeatBehavior = RepeatBehavior.Forever;
             sb.Begin();
             sb2.Begin();
+            
+
         }
         
         private void usePotionRed(object sender, object e)
@@ -52,12 +54,15 @@ namespace PokemonWPF
             imgPocionUsada.Visibility=Visibility.Collapsed;
             imgPocion.Visibility = Visibility.Visible;
             dtReloj.Stop();
+            
         }
 
         private void increaseHealth(object sender, PointerRoutedEventArgs e)
         {
             PVida.Value = PVida.Value + 20;
             dtReloj.Start();
+            Storyboard sb = (Storyboard)this.Resources["curarVida"];
+            sb.Begin();
             imgPocion.Visibility = Visibility.Collapsed;
             imgPocionUsada.Visibility = Visibility.Visible;
         }
@@ -66,6 +71,8 @@ namespace PokemonWPF
         {
             PEnergia.Value = PEnergia.Value + 10;
             controlTiempos.Start();
+            Storyboard sb = (Storyboard)this.Resources["subirEnergia"];
+            sb.Begin();
             imgElixir.Visibility = Visibility.Collapsed;
             imgElixirUsada.Visibility = Visibility.Visible;
         }
@@ -113,6 +120,15 @@ namespace PokemonWPF
         {
             Storyboard sb = (Storyboard)this.Resources["Protección"];
             sb.Begin();
+            
         }
+
+        private void usarDescanso(object sender, RoutedEventArgs e)
+        {
+            Storyboard sb = (Storyboard)this.Resources["Descanso"];
+            sb.Begin();
+            PVida.Value = PVida.Value + 20;
+        }
+
     }
 }

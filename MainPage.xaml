@@ -267,6 +267,457 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Name="Descanso">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptBoca" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="elOjoIzquierdo" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="elOjoDerecho" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="elPupilaIzquierda" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="elPupilaDerecha" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptGarganta" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptOjoIzquierdoDormido" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptOjoDerechoDormido" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptBocaDormida" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSueño" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:01">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.2000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSueño2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.2000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgSueño3" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.2000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04.6000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.2000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:05.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="curarVida">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgTirita" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgTirita" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-1.867"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-0.534"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="-2.312"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-1.05"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-3.187"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="-0.525"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.5000000" Value="-2.396"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgTirita" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.267"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-0.571"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="-0.209"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-0.701"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0.008"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="-0.528"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0.003"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="subirEnergia">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia3" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:04">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-2"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-2.295"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-4.968"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-4.276"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-2.809"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-2.222"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-1.263"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="2.034"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-0.135"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0.677"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="3.809"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="6.986"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0.513"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.8000000" Value="2.44"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="1.233"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="-0.614"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.4000000" Value="-6.461"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.6000000" Value="1.693"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.8000000" Value="-5.554"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-1.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-3.916"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-0.098"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-0.892"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-3.636"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-1.394"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="4.306"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="-2.025"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-1.056"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="4.64"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="-5.424"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="8.379"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.6000000" Value="-0.668"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-5.773"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="2.389"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="-2.089"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.4000000" Value="3.633"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.6000000" Value="-1.978"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.8000000" Value="1.811"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-2"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-4.695"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-4.834"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-1.75"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-1.241"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-5.158"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-1.59"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="5.732"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-1.946"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-0.969"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="-0.072"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="-0.864"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.6000000" Value="-0.356"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.8000000" Value="6.095"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="1.479"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="5.983"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.4000000" Value="9.687"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.6000000" Value="-3.142"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.8000000" Value="-4.771"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-2.4"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-0.274"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-1.059"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-3.797"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.04"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="1.637"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-6.08"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1.588"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-3.744"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-6.204"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="-12.784"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="-0.164"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.6000000" Value="2.256"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-6.066"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="-3.455"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="1.236"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.4000000" Value="-1.873"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.6000000" Value="-12.449"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.8000000" Value="1.776"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-0.4"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="3.222"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-0.568"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-1.732"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-1.217"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.07"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="-1.135"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-1.04"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="2.655"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="-5.61"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="-0.587"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.6000000" Value="-3.314"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-1.641"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="-3.768"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0.186"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.4000000" Value="-1.86"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.6000000" Value="-4.04"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.8000000" Value="-0.82"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="3.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="2.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="5.247"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="2.919"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="5.924"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="11.901"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="6.185"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-1.53"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="5.809"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="-2.772"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.336"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0.252"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.8000000" Value="4.652"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="1.877"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="5.902"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.4000000" Value="5.627"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.6000000" Value="-2.249"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.8000000" Value="1.276"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="imgRecuperarEnergia1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:03" Value="29.125"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:03.2000000" Value="29.536"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:04" Value="29.125"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Page.Resources>
 
     <Grid>
@@ -285,7 +736,7 @@
         <Image x:Name="imgFondo" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="4" Grid.ColumnSpan="3" Source="/Assets/fondoPokemon.jpg" Stretch="UniformToFill"/>
         <Image x:Name="imgVida" Grid.Column="0" Grid.Row="0" Margin="10,10,10,10" Source="/Assets/corazon.png"/>
         <Image x:Name="imgEnergia" Grid.Column="0" Grid.Row="1" Margin="10,10,10,10" Source="/Assets/energia.png"/>
-        <ProgressBar x:Name="PVida" Grid.Column="1" Grid.Row="0" VerticalAlignment="Stretch" Margin="2,2,2,2" Foreground="#FFD70000" Background="#4CFF0000" Value="40"/>
+        <ProgressBar x:Name="PVida" Grid.Column="1" Grid.Row="0" VerticalAlignment="Stretch" Margin="2,2,2,2" Foreground="#FFD70000" Background="#4CFF0000" Value="50"/>
         <ProgressBar x:Name="PEnergia" Grid.Column="1" Grid.Row="1" VerticalAlignment="Stretch" Margin="2,2,2,2" Foreground="#FFE9FF00" Background="#4CE9FF00" Value="50" />
         <Image x:Name="imgPocion" Grid.Column="2" Grid.Row="0" Margin="10,10,10,10" Source="/Assets/pocion.png" PointerReleased="increaseHealth"/>
         <Image x:Name="imgPocionUsada" Grid.Column="2" Grid.Row="0" Margin="10,10,10,10" Source="/Assets/pocion.png" Visibility="Collapsed" Opacity="0.4"/>
@@ -394,6 +845,40 @@
                 </Ellipse>
                 <Path x:Name="ptGarganta" Data="M0.5,0.5 L27.5,0.5 L27.5,9.6876669 L27.380184,9.5269165 C24.618853,5.9252701 19.437061,3.5 13.5,3.5 C8.2532949,3.5 3.5964272,5.3940454 0.67863321,8.3202085 L0.5,8.5039034 z" Fill="#FFDA2223" HorizontalAlignment="Left" Height="4" Canvas.Left="70.5" Stroke="#FFDA2223" Stretch="Fill" Canvas.Top="89.867" UseLayoutRounding="False" VerticalAlignment="Top" Width="28" />
                 <Ellipse x:Name="elNariz" Height="6" Canvas.Left="78" Stroke="Black" Canvas.Top="74" Width="13" Fill="Black"/>
+                <Path x:Name="ptOjoIzquierdoDormido" Grid.Column="1" Data="M0.5,0.5 L0.71760345,0.56951332 C3.7207711,1.5053186 7.4487088,2.0594978 11.487291,2.0594978 C15.525872,2.0594978 19.25381,1.5053186 22.256978,0.56951332 L22.47458,0.5 L22.439254,0.52394199 C20.128383,2.048914 16.086786,3.0594978 11.487291,3.0594978 C6.8877938,3.0594978 2.8461974,2.048914 0.53532696,0.52394199 z" Fill="Black" HorizontalAlignment="Left" Height="2" Grid.Row="2" Stroke="Black" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="10" Canvas.Left="59.6" Canvas.Top="69.507" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                    <Path.RenderTransform>
+                        <CompositeTransform Rotation="0.372"/>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="ptOjoDerechoDormido" Data="M0.5,0.5 L0.71760345,0.56951332 C3.7207711,1.5053186 7.4487088,2.0594978 11.487291,2.0594978 C15.525872,2.0594978 19.25381,1.5053186 22.256978,0.56951332 L22.47458,0.5 L22.439254,0.52394199 C20.128383,2.048914 16.086786,3.0594978 11.487291,3.0594978 C6.8877938,3.0594978 2.8461974,2.048914 0.53532696,0.52394199 z" Fill="Black" Height="2" Stroke="Black" Stretch="Fill" UseLayoutRounding="False" Width="10" Canvas.Left="101.6" Canvas.Top="69.507" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                    <Path.RenderTransform>
+                        <CompositeTransform Rotation="0.372"/>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="ptBocaDormida" Grid.Column="1" Data="M0.5,0.5 L0.71760345,0.56951332 C3.7207711,1.5053186 7.4487088,2.0594978 11.487291,2.0594978 C15.525872,2.0594978 19.25381,1.5053186 22.256978,0.56951332 L22.47458,0.5 L22.439254,0.52394199 C20.128383,2.048914 16.086786,3.0594978 11.487291,3.0594978 C6.8877938,3.0594978 2.8461974,2.048914 0.53532696,0.52394199 z" Fill="Black" HorizontalAlignment="Left" Height="4" Grid.Row="2" Stroke="Black" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="24" Canvas.Left="73" Canvas.Top="93.867" Visibility="Collapsed"/>
+                <Image x:Name="imgSueño" Source="/Assets/letra-z.png" Height="10" Width="6" Canvas.Left="124" Canvas.Top="32" Visibility="Collapsed"/>
+                <Image x:Name="imgSueño2" Source="/Assets/letra-z.png" Height="12" Width="11" Canvas.Left="130" Canvas.Top="22" Visibility="Collapsed"/>
+                <Image x:Name="imgSueño3" Source="/Assets/letra-z.png" Height="19" Width="16" Canvas.Left="141" Canvas.Top="5" Visibility="Collapsed"/>
+                <Image x:Name="imgTirita" Source="/Assets/tirita.png" Height="22" Canvas.Top="41.8" Width="23" Canvas.Left="109.8" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="101.604"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="imgRecuperarEnergia1" Source="/Assets/energia.png" Height="19" Width="23" Canvas.Left="140" Canvas.Top="53" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="29.125"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="imgRecuperarEnergia2" Source="/Assets/energia.png" Height="19" Width="23" Canvas.Left="8.4" Canvas.Top="56.133" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-29.125" ScaleX="-1"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="imgRecuperarEnergia3" Source="/Assets/energia.png" Height="19" Width="23" Canvas.Left="100.067" Canvas.Top="3.667" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="16.696"/>
+                    </Image.RenderTransform>
+                </Image>
             </Canvas>
 
             <Canvas x:Name="cvBrazoIzquierdo" Grid.Column="1" Grid.Row="2" Height="44" Canvas.Left="36" Canvas.Top="160" Width="88" RenderTransformOrigin="0.791,0.314">
@@ -462,11 +947,14 @@
             <Canvas x:Name="cvEscudo" Grid.Column="1" Grid.Row="2" Height="105" Width="112" Canvas.Left="87" Canvas.Top="140" RenderTransformOrigin="0.557,0.545" Visibility="Collapsed">
                 <Image x:Name="imgEscudo" Source="/Assets/escudo.png" Height="107" Width="106" HorizontalAlignment="Left" Canvas.Left="3" Canvas.Top="-1" VerticalAlignment="Top" Visibility="Collapsed"/>
             </Canvas>
+
+
+
         </Canvas>
         <StackPanel x:Name="spAcciones" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Button x:Name="btnAtaque" Content="Venganza" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0" Click="usarVenganza"/>
             <Button x:Name="btnProteccion" Content="Protección" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" Click="usarProteccion" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0"/>
-            <Button x:Name="btnDescanso" Content="Descanso" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" Click="usarVenganza" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0"/>
+            <Button x:Name="btnDescanso" Content="Descanso" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0" Click="usarDescanso"/>
         </StackPanel>
 
     </Grid>
