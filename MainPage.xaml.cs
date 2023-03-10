@@ -24,6 +24,9 @@ namespace PokemonWPF
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        int costeVenganza = 20;
+        int costeProteccion = 10;
+        int costeDescanso = 15;
         DispatcherTimer dtReloj;
         DispatcherTimer controlTiempos;
 
@@ -59,7 +62,7 @@ namespace PokemonWPF
 
         private void increaseHealth(object sender, PointerRoutedEventArgs e)
         {
-            PVida.Value = PVida.Value + 20;
+            PVida.Value = PVida.Value + 30;
             dtReloj.Start();
             Storyboard sb = (Storyboard)this.Resources["curarVida"];
             sb.Begin();
@@ -69,12 +72,18 @@ namespace PokemonWPF
 
         private void increaseEnergy(object sender, PointerRoutedEventArgs e)
         {
-            PEnergia.Value = PEnergia.Value + 10;
-            controlTiempos.Start();
-            Storyboard sb = (Storyboard)this.Resources["subirEnergia"];
-            sb.Begin();
-            imgElixir.Visibility = Visibility.Collapsed;
-            imgElixirUsada.Visibility = Visibility.Visible;
+            PEnergia.Value = PEnergia.Value + 20;
+            if (usarEnergia(0))
+            {
+                controlTiempos.Start();
+                Storyboard sb = (Storyboard)this.Resources["subirEnergia"];
+                sb.Begin();
+                imgElixir.Visibility = Visibility.Collapsed;
+                imgElixirUsada.Visibility = Visibility.Visible;
+            }
+
+            
+            
         }
 
         private void useEnergyPotion(object sender, object e)
@@ -112,23 +121,55 @@ namespace PokemonWPF
 
         private void usarVenganza(object sender, RoutedEventArgs e)
         {
-            Storyboard sb = (Storyboard)this.Resources["Venganza"];
-            sb.Begin();   
+            if (usarEnergia(costeVenganza))
+            {
+                Storyboard sb = (Storyboard)this.Resources["Venganza"];
+                sb.Begin();
+            }   
         }
 
         private void usarProteccion(object sender, RoutedEventArgs e)
         {
-            Storyboard sb = (Storyboard)this.Resources["Protección"];
-            sb.Begin();
-            
+            if (usarEnergia(costeProteccion))
+            {
+                Storyboard sb = (Storyboard)this.Resources["Protección"];
+                sb.Begin();
+            }
+            Storyboard sb2 = (Storyboard)this.Resources["MoverBrazos"];
+            sb2.BeginTime = TimeSpan.FromMilliseconds(400);
+            sb2.RepeatBehavior = RepeatBehavior.Forever;
         }
 
         private void usarDescanso(object sender, RoutedEventArgs e)
         {
-            Storyboard sb = (Storyboard)this.Resources["Descanso"];
-            sb.Begin();
-            PVida.Value = PVida.Value + 20;
+            if (usarEnergia(costeDescanso))
+            {
+                Storyboard sb = (Storyboard)this.Resources["Descanso"];
+                sb.Begin();
+                PVida.Value = PVida.Value + 20;
+            }
         }
+
+        private Boolean usarEnergia(int valorAtaque) 
+        {
+            Storyboard sb = (Storyboard)this.Resources["Cansancio"];
+            if (PEnergia.Value >= 10)
+            {
+                PEnergia.Value = PEnergia.Value - valorAtaque;
+                if(PEnergia.Value <=10)
+                {
+                    sb.Begin();
+                    sb.RepeatBehavior = RepeatBehavior.Forever;
+                }
+                else
+                {
+                    sb.Stop();
+                }
+                return true;
+            }
+            return false;
+        }
+        
 
     }
 }
