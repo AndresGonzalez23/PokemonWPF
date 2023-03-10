@@ -502,6 +502,42 @@
                     </DiscreteObjectKeyFrame.Value>
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnAtaque" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnProteccion" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnDescanso" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Name="curarVida">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgTirita" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -764,6 +800,28 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-1.2"/>
             </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptGarganta" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptBoca" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptBocaDormida" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="00:00:00" Storyboard.TargetName="ptBocaDormida" To="180.734" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"/>
         </Storyboard>
     </Page.Resources>
 
@@ -902,7 +960,11 @@
                         <CompositeTransform Rotation="0.372"/>
                     </Path.RenderTransform>
                 </Path>
-                <Path x:Name="ptBocaDormida" Grid.Column="1" Data="M0.5,0.5 L0.71760345,0.56951332 C3.7207711,1.5053186 7.4487088,2.0594978 11.487291,2.0594978 C15.525872,2.0594978 19.25381,1.5053186 22.256978,0.56951332 L22.47458,0.5 L22.439254,0.52394199 C20.128383,2.048914 16.086786,3.0594978 11.487291,3.0594978 C6.8877938,3.0594978 2.8461974,2.048914 0.53532696,0.52394199 z" Fill="Black" HorizontalAlignment="Left" Height="4" Grid.Row="2" Stroke="Black" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="24" Canvas.Left="73" Canvas.Top="93.867" Visibility="Collapsed"/>
+                <Path x:Name="ptBocaDormida" Grid.Column="1" Data="M0.5,0.5 L0.71760345,0.56951332 C3.7207711,1.5053186 7.4487088,2.0594978 11.487291,2.0594978 C15.525872,2.0594978 19.25381,1.5053186 22.256978,0.56951332 L22.47458,0.5 L22.439254,0.52394199 C20.128383,2.048914 16.086786,3.0594978 11.487291,3.0594978 C6.8877938,3.0594978 2.8461974,2.048914 0.53532696,0.52394199 z" Fill="Black" HorizontalAlignment="Left" Height="4" Grid.Row="2" Stroke="Black" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="24" Canvas.Left="73" Canvas.Top="93.867" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <CompositeTransform/>
+                    </Path.RenderTransform>
+                </Path>
                 <Image x:Name="imgSueño" Source="/Assets/letra-z.png" Height="10" Width="6" Canvas.Left="124" Canvas.Top="32" Visibility="Collapsed"/>
                 <Image x:Name="imgSueño2" Source="/Assets/letra-z.png" Height="12" Width="11" Canvas.Left="130" Canvas.Top="22" Visibility="Collapsed"/>
                 <Image x:Name="imgSueño3" Source="/Assets/letra-z.png" Height="19" Width="16" Canvas.Left="141" Canvas.Top="5" Visibility="Collapsed"/>
@@ -947,7 +1009,7 @@
                 <Canvas.RenderTransform>
                     <CompositeTransform/>
                 </Canvas.RenderTransform>
-                <Ellipse x:Name="elBrazoIzquierdo" Height="24" Stroke="Black" Width="49" Canvas.Left="26.308" Canvas.Top="10.48" RenderTransformOrigin="0.901,0.48" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="#FFE0915A">
+                <Ellipse x:Name="elBrazoIzquierdo" Height="24" Stroke="Black" Width="49" Canvas.Left="26.308" Canvas.Top="10.48" RenderTransformOrigin="0.901,0.48" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="#FFE0915A" PointerReleased="tocarBrazoIzquierdo">
                     <Ellipse.RenderTransform>
                         <CompositeTransform Rotation="-25.288" TranslateX="-2.089" TranslateY="-8.349"/>
                     </Ellipse.RenderTransform>
@@ -973,7 +1035,7 @@
                 <Canvas.RenderTransform>
                     <CompositeTransform/>
                 </Canvas.RenderTransform>
-                <Ellipse x:Name="elipseBrazoDerecho" Height="24" Stroke="Black" Width="49" Canvas.Left="-8.492" Canvas.Top="10.08" RenderTransformOrigin="0.916,0.481" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="#FFE0915A">
+                <Ellipse x:Name="elipseBrazoDerecho" Height="24" Stroke="Black" Width="49" Canvas.Left="-8.492" Canvas.Top="10.08" RenderTransformOrigin="0.916,0.481" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="#FFE0915A" PointerReleased="tocarBrazoDerecho">
 
                     <Ellipse.Resources>
                         <Storyboard x:Name="sbBrazoDerechoP" x:Key="sbBrazoDerechoKey">

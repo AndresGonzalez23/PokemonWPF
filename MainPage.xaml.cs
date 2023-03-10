@@ -130,14 +130,12 @@ namespace PokemonWPF
 
         private void usarProteccion(object sender, RoutedEventArgs e)
         {
+            
             if (usarEnergia(costeProteccion))
             {
                 Storyboard sb = (Storyboard)this.Resources["Protección"];
                 sb.Begin();
             }
-            Storyboard sb2 = (Storyboard)this.Resources["MoverBrazos"];
-            sb2.BeginTime = TimeSpan.FromMilliseconds(400);
-            sb2.RepeatBehavior = RepeatBehavior.Forever;
         }
 
         private void usarDescanso(object sender, RoutedEventArgs e)
@@ -169,7 +167,19 @@ namespace PokemonWPF
             }
             return false;
         }
-        
 
+        private void tocarBrazoIzquierdo(object sender, PointerRoutedEventArgs e)
+        {
+            Storyboard sb = (Storyboard)this.Resources["MoverBrazos"];
+            sb.RepeatBehavior = RepeatBehavior.Forever;
+            sb.Begin();
+        }
+
+        private void tocarBrazoDerecho(object sender, PointerRoutedEventArgs e)
+        {
+            Storyboard sb = (Storyboard)this.Resources["MoverBrazos"];
+            sb.RepeatBehavior = RepeatBehavior.Forever;
+            sb.Begin();
+        }
     }
 }
