@@ -189,6 +189,18 @@
                     </DiscreteObjectKeyFrame.Value>
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnMordisco" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02.3000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Name="Protección">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvBrazoDerecho" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
@@ -255,6 +267,18 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnDescanso" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:03.8000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnMordisco" Storyboard.TargetProperty="(Control.IsEnabled)">
                 <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
                     <DiscreteObjectKeyFrame.Value>
                         <x:Boolean>False</x:Boolean>
@@ -527,6 +551,48 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnDescanso" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:06">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvBrazoIzquierdo" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-105.635"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06" Value="-111.272"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-11.676"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvBrazoDerecho" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="110.244"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06" Value="111.128"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06.5000000" Value="20.998"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvPieIzquierdo" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="53.599"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06" Value="46.35"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-5.162"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvTeddiursa" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="19.915"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06" Value="18.105"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-0.904"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvTeddiursa" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-1.81"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06" Value="1.811"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-1.81"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvPieDerecho" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-52.888"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06" Value="-50.13"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:06.5000000" Value="0.781"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnMordisco" Storyboard.TargetProperty="(Control.IsEnabled)">
                 <DiscreteObjectKeyFrame KeyTime="00:00:00">
                     <DiscreteObjectKeyFrame.Value>
                         <x:Boolean>False</x:Boolean>
@@ -823,6 +889,96 @@
             </ObjectAnimationUsingKeyFrames>
             <DoubleAnimation Duration="00:00:00" Storyboard.TargetName="ptBocaDormida" To="180.734" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"/>
         </Storyboard>
+        <Storyboard x:Name="Mordisco">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptColmillo1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ptColmillo2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvTeddiursa" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.2"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="266.4"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="10.8"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvTeddiursa" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-93.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="13.2"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="-123.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="21.6"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvTeddiursa" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="15.748"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-0.317"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnAtaque" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnProteccion" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnDescanso" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnMordisco" Storyboard.TargetProperty="(Control.IsEnabled)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>False</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <x:Boolean>True</x:Boolean>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
     </Page.Resources>
 
     <Grid>
@@ -838,7 +994,7 @@
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
 
-        <Image x:Name="imgFondo" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="4" Grid.ColumnSpan="3" Source="/Assets/fondoPokemon.jpg" Stretch="UniformToFill"/>
+        <Image x:Name="imgFondo" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="4" Grid.ColumnSpan="3" Source="/Assets/fondoBosque.png" Stretch="UniformToFill"/>
         <Image x:Name="imgVida" Grid.Column="0" Grid.Row="0" Margin="10,10,10,10" Source="/Assets/corazon.png"/>
         <Image x:Name="imgEnergia" Grid.Column="0" Grid.Row="1" Margin="10,10,10,10" Source="/Assets/energia.png"/>
         <ProgressBar x:Name="PVida" Grid.Column="1" Grid.Row="0" VerticalAlignment="Stretch" Margin="2,2,2,2" Foreground="#FFD70000" Background="#4CFF0000" Value="50"/>
@@ -948,7 +1104,7 @@
                         <CompositeTransform Rotation="138.052"/>
                     </Ellipse.RenderTransform>
                 </Ellipse>
-                <Path x:Name="ptGarganta" Data="M0.5,0.5 L27.5,0.5 L27.5,9.6876669 L27.380184,9.5269165 C24.618853,5.9252701 19.437061,3.5 13.5,3.5 C8.2532949,3.5 3.5964272,5.3940454 0.67863321,8.3202085 L0.5,8.5039034 z" Fill="#FFDA2223" HorizontalAlignment="Left" Height="4" Canvas.Left="70.5" Stroke="#FFDA2223" Stretch="Fill" Canvas.Top="89.867" UseLayoutRounding="False" VerticalAlignment="Top" Width="28" />
+                <Path x:Name="ptGarganta" Data="M0.5,0.5 L27.5,0.5 L27.5,9.6876669 L27.380184,9.5269165 C24.618853,5.9252701 19.437061,3.5 13.5,3.5 C8.2532949,3.5 3.5964272,5.3940454 0.67863321,8.3202085 L0.5,8.5039034 z" Fill="#FFDA2223" HorizontalAlignment="Left" Height="4" Canvas.Left="71" Stroke="#FFDA2223" Stretch="Fill" Canvas.Top="89.867" UseLayoutRounding="False" VerticalAlignment="Top" Width="28" />
                 <Ellipse x:Name="elNariz" Height="6" Canvas.Left="78" Stroke="Black" Canvas.Top="74" Width="13" Fill="Black"/>
                 <Path x:Name="ptOjoIzquierdoDormido" Grid.Column="1" Data="M0.5,0.5 L0.71760345,0.56951332 C3.7207711,1.5053186 7.4487088,2.0594978 11.487291,2.0594978 C15.525872,2.0594978 19.25381,1.5053186 22.256978,0.56951332 L22.47458,0.5 L22.439254,0.52394199 C20.128383,2.048914 16.086786,3.0594978 11.487291,3.0594978 C6.8877938,3.0594978 2.8461974,2.048914 0.53532696,0.52394199 z" Fill="Black" HorizontalAlignment="Left" Height="2" Grid.Row="2" Stroke="Black" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="10" Canvas.Left="59.6" Canvas.Top="69.507" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
                     <Path.RenderTransform>
@@ -1003,6 +1159,16 @@
                         <CompositeTransform/>
                     </Image.RenderTransform>
                 </Image>
+                <Path x:Name="ptColmillo1" Data="M0.5,0.5 L14.166667,-31.793333 28.5,0.5 28.666667,1.5017123 0.66765873,1.3337591 z" Height="5" Stroke="Black" Stretch="Fill" Width="6" Fill="White" Canvas.Left="72.079" UseLayoutRounding="False" RenderTransformOrigin="0.5,0.5" Canvas.Top="89.929" Visibility="Collapsed">
+                    <Path.RenderTransform>
+                        <CompositeTransform Rotation="181.566"/>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="ptColmillo2" Data="M0.5,0.5 L14.166667,-31.793333 28.5,0.5 28.666667,1.5017123 0.66765873,1.3337591 z" Height="5" Stroke="Black" Stretch="Fill" Width="6" Fill="White" Canvas.Left="91.1" UseLayoutRounding="False" RenderTransformOrigin="0.5,0.5" Canvas.Top="89.827" Visibility="Collapsed">
+                    <Path.RenderTransform>
+                        <CompositeTransform Rotation="-179.765"/>
+                    </Path.RenderTransform>
+                </Path>
             </Canvas>
 
             <Canvas x:Name="cvBrazoIzquierdo" Grid.Column="1" Grid.Row="2" Height="44" Canvas.Left="36" Canvas.Top="160" Width="88" RenderTransformOrigin="0.791,0.314">
@@ -1075,11 +1241,16 @@
 
 
         </Canvas>
-        <StackPanel x:Name="spAcciones" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Button x:Name="btnAtaque" Content="Venganza" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0" Click="usarVenganza"/>
-            <Button x:Name="btnProteccion" Content="Protección" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" Click="usarProteccion" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0"/>
-            <Button x:Name="btnDescanso" Content="Descanso" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0" Click="usarDescanso"/>
-        </StackPanel>
+        
+        
+        <Viewbox x:Name="vbAtaques" Grid.Column="2" Grid.Row="2" Margin="0,0,0,145">
+            <StackPanel x:Name="spAcciones" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="287">
+                <Button x:Name="btnAtaque" Content="Venganza" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0" Click="usarVenganza"/>
+                <Button x:Name="btnProteccion" Content="Protección" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" Click="usarProteccion" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0"/>
+                <Button x:Name="btnDescanso" Content="Descanso" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0" Click="usarDescanso"/>
+                <Button x:Name="btnMordisco" Content="Mordisco" Foreground="White" Height="60" FontSize="14" FontWeight="Bold" Background="#FF655456" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,10,5,0" Click="usarMordisco"/>
+            </StackPanel>
+        </Viewbox>
 
     </Grid>
 </Page>

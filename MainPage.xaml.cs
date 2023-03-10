@@ -27,6 +27,7 @@ namespace PokemonWPF
         int costeVenganza = 20;
         int costeProteccion = 10;
         int costeDescanso = 15;
+        int costeMordisco = 15;
         DispatcherTimer dtReloj;
         DispatcherTimer controlTiempos;
 
@@ -180,6 +181,15 @@ namespace PokemonWPF
             Storyboard sb = (Storyboard)this.Resources["MoverBrazos"];
             sb.RepeatBehavior = RepeatBehavior.Forever;
             sb.Begin();
+        }
+
+        private void usarMordisco(object sender, RoutedEventArgs e)
+        {
+            if (usarEnergia(costeMordisco))
+            {
+                Storyboard sb = (Storyboard)this.Resources["Mordisco"];
+                sb.Begin();
+            }
         }
     }
 }
